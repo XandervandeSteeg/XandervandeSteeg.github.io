@@ -19,6 +19,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: black;
 }
 
 li {
@@ -30,4 +31,8 @@ li a {
     padding: 8px;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover {
+    background-color: grey;
 }
