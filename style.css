@@ -18,7 +18,7 @@ a {
     cursor: pointer;
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,17 +26,17 @@ ul {
     background-color: black;
 }
 
-.navbarli li {
+.navbar li {
     float: left;
 }
   
-.navbarli li a {
+.navbar li a {
     display: block;
     padding: 20px;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbarli li a:hover {
+.navbar li a:hover {
     background-color: grey;
 }
