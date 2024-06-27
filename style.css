@@ -60,50 +60,6 @@ ul {
     z-index: 10;
 }
 
-.navbar .nav-toggler {
-    height: 40px;
-    width: 45px;
-    border: 1px solid var(--bg-zwart-50);
-    cursor: pointer;
-    position: fixed;
-    left: 300px;
-    top: 20px;
-    border-radius: 5px;
-    background: var(--bg-zwart-100);
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.navbar .nav-toggler span {
-    height: 2px;
-    width: 18px;
-    background: var(--hoofdkleur);
-    display: inline-block;
-    position: relative;
-}
-
-.navbar .nav-toggler span::before {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--hoofdkleur);
-    position: absolute;
-    top: -6px;
-    left: 0;
-}
-
-.navbar .nav-toggler span::after {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--hoofdkleur);
-    position: absolute;
-    top: 6px;
-    left: 0;
-}
-
 .navbar .navul {
     margin-top: 50px;
 }
@@ -122,7 +78,7 @@ ul {
     padding: 5px 15px;
 }
 
-.navbar .navul li a.active {
+.navbar .navul li a .active {
     color: var(--hoofdkleur);
 }
 
