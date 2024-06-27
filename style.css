@@ -33,14 +33,8 @@ body {
 .section {
     background: var(--bg-zwart-900);
     min-height: 100vh;
-    display: block;
-    position: fixed;
-    left: 270px;
     padding: 0 30px;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    opacity: 1;
+    padding-left: 300px;
 }
 
 .container {
@@ -131,12 +125,6 @@ body {
 
 .navbar .navul li a i {
     margin-right: 15px;
-}
-
-.home {
-    min-height: 100vh;
-    display: flex;
-    color: var(--bg-zwart-900)
 }
 
 
