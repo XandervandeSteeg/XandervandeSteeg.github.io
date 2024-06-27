@@ -30,6 +30,11 @@ body {
     box-sizing: border-box;
 }
 
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
 .section {
     background: var(--bg-zwart-900);
     min-height: 100vh;
