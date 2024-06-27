@@ -1,5 +1,6 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap'); /* Clicker font */
 
 /* Variabelen voor de kleuren */
 :root {
@@ -58,6 +59,49 @@ ul {
     justify-content: center;
     align-items: center;
     z-index: 10;
+}
+
+.navbar .logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.navbar .logo a {
+    color: var(--tekst-zwart-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.navbar .logo a span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+}
+
+.navbar .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--hoofdkleur);
+    border-left: 5px solid var(--hoofdkleur);
+    bottom: 0;
+    left: 0;
+}
+
+.navbar .logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--hoofdkleur);
+    border-right: 5px solid var(--hoofdkleur);
+    top: 0;
+    right: 0;
 }
 
 .navbar .navul {
