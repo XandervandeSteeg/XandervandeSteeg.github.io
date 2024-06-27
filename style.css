@@ -33,7 +33,10 @@ body {
 .section {
     background: var(--bg-zwart-900);
     min-height: 100vh;
-    padding-left: 400px;
+    padding: 30px;
+    margin-left: 310px;
+    position: relative;
+    z-index: 1;
 }
 
 .container {
