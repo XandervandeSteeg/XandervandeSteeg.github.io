@@ -126,6 +126,12 @@ body {
     margin-right: 15px;
 }
 
+.home {
+    min-height: 100vh;
+    display: flex;
+    color: var(--bg-zwart-900);
+}
+
 
 
 
