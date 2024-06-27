@@ -1,4 +1,76 @@
+:root {
+    --bg-zwart-900: #f2f2fc;
+    --bg-zwart-100: #fdf9ff; 
+    --bg-zwart-50: #e8dfec;
+    --tekst-zwart-900: #302e4d;
+    --tekst-zwart-700: #504e70;
+}
+
 body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+.section {
+    background: var(--bg-zwart-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
+
+.navbar {
+    width: 270px;
+    background: var(--bg-zwart-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
     margin: 0px;
 }
 
@@ -39,4 +111,4 @@ body {
 
 .navbar li a:hover {
     background-color: grey;
-}
+} */
