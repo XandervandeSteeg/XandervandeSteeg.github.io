@@ -1,14 +1,20 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variabelen voor de kleuren */
 :root {
     --bg-zwart-900: #f2f2fc;
     --bg-zwart-100: #fdf9ff; 
     --bg-zwart-50: #e8dfec;
     --tekst-zwart-900: #302e4d;
     --tekst-zwart-700: #504e70;
+    --hoofdkleur: #0099ff;
 }
 
 body {
     line-height: 1.5;
     font-size: 16px;
+    font-family: 'Poppins' sans-serif;
 }
 
 * {
@@ -21,6 +27,10 @@ body {
 
 ::before, ::after {
     box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
 }
 
 .section {
@@ -41,8 +51,83 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    padding: 30px;
     height: 100%;
+    border-right: 1px solid var(--bg-zwart-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
+}
+
+.navbar .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-zwart-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-zwart-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--hoofdkleur);
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .nav-toggler span::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--hoofdkleur);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.navbar .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--hoofdkleur);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.navbar .navul {
+    margin-top: 50px;
+}
+
+.navbar .navul li {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.navbar .navul li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-zwart-50);
+    color: var(--tekst-zwart-900);
+    padding: 5px 15px;
+}
+
+.navbar .navul li a.active {
+    color: var(--hoofdkleur);
+}
+
+.navbar .navul li a i {
+    margin-right: 15px;
 }
 
 
