@@ -33,10 +33,13 @@ body {
 .section {
     background: var(--bg-zwart-900);
     min-height: 100vh;
-    padding: 30px;
-    margin-left: 310px;
-    position: relative;
-    z-index: 1;
+    display: block;
+    position: fixed;
+    left: 310px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
 }
 
 .container {
