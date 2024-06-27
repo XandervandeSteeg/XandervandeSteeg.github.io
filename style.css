@@ -119,7 +119,7 @@ ul {
     padding: 5px 15px;
 }
 
-.navbar .navul li a .active {
+.navbar .navul li a.active {
     color: var(--hoofdkleur);
 }
 
