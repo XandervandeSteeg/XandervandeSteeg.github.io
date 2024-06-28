@@ -14,8 +14,8 @@
 
 body {
     line-height: 1.5;
-    font-size: 16px;
-    font-family: 'Poppins' sans-serif;
+    font-family: Arial;
+    font-size: 20px;
 }
 
 * {
@@ -41,18 +41,17 @@ body {
 
 .container {
     max-width: 1100px;
-    left: 310px;
+    left: 350px;
     position: fixed;
 }
 
 .row {
-    display: flex;
     flex-wrap: wrap;
     position: relative;
 }
 
 .navbar {
-    width: 310px;
+    width: 330px;
     background: var(--bg-zwart-100);
     left: 0;
     top: 0;
@@ -142,70 +141,31 @@ body {
     color: var(--bg-zwart-900);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    margin: 0px;
+h3.hallo {
+    font-family: serif;
+    font-size: 40px;
+    margin: 15px 0;
 }
 
-.navbar {
-    background-color: black;
+h3.hallo span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--hoofdkleur);
 }
 
-.navbar a {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 0px 0px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0px 0px;
-    cursor: pointer;
+.row ul {
+    margin-left: 20px;
+    list-style: none;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+.row ul a {
+    color: var(--hoofdkleur);
+    margin-left: 10px;
 }
 
-.navbar li {
-    float: left;
+.row ul li::before {
+    content: '⮕';
+    position: absolute;
+    left: 0;
 }
-  
-.navbar li a {
-    display: block;
-    padding: 20px;
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar li a:hover {
-    background-color: grey;
-} */
