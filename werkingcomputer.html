@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!--   dit is de homepage van mijn site -->
+<html> <!-- dit is het html element -->
   <head>
-    <title>Werking van een computer</title>
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  </head>
+    <title>Werking van een computer</title> <!-- Dit is de titel van mijn site -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- De externe css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- voor de emoticons die ik gebruik -->
+  </head> 
   <body>
-    <div class="main-container">
-      <div class="navbar">
+    <div class="main-container"> <!-- Dit maakt de indeling van de navbar, en de tekst en de media makkelijker -->
+      <div class="navbar"> <!-- Zodat ik op elke pagina de navigatie tegelijk aan kan passen -->
         <div class="logo">
-          <a href="index.html"><span>X</span>ander</a>
+          <a href="index.html"><span>X</span>ander</a> <!-- Een logo want dat staat leuk ;) En de span is zodat ik de X mooi kan stylen zonder dat de rest van de letter ook meegaan -->
         </div>
-        <ul class="navul">
+        <ul class="navul"> <!-- Dit is de navigatiebalk -->
           <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
           <li><a href="binairstelsel.html"><i class="fa-solid fa-list-ol"></i>Binair stelsel</a></li>
           <li><a href="kleurmodellen.html"><i class="fa-solid fa-palette"></i>Kleurmodellen</a></li>
@@ -20,13 +19,56 @@
           <li><a href="werkingcomputer.html" class="active"><i class="fa-solid fa-display"></i>Werking van een computer</a></li>
         </ul>
       </div>
-      <div class="main-content">
+      <div class="main-content"> <!-- Dit is zodat ik de style van mijn tekst over alle onderwerpen tegelijk aan kan passen -->
         <section class="werkingcomputer-section">
           <div class="container">
-              <div class="row">
-                
+              <div class="row"> <!-- Zodat ik overal dezelfde font en margin kan stylen -->
+                <h3>Werking van een computer</h3> <br> <!-- Ik gebruik h3 het grootste kopje -->
+                <p>Computers zijn hele mooie machines, maar ook zeer complex. Op deze pagina ga ik uitleggen hoe een computer nou precies werkt. Dat ga ik onderverdelen in vier kopjes. Invoer, Verwerking, Uitvoer en Opslag.</p> <br>
+                <h2>Invoer</h2> <!-- Ik gebruik h2 voor de kleinere kopjes -->
+                <p>Laten we beginnen bij de eerste, de invoer. Invoer is een proces waarbij instructies worden doorgegeven aan de computer. Ik zal een aantal voorbeelden geven:</p>
+                <ul>
+                  <li><b>Toetsenbord:</b> een apparaat waarmee de gebruiker tekst in kan voeren, wat dan weer door de computer geregistreerd word. </li>
+                  <li><b>Muis:</b> een apparaat die word gebruikt om te navigeren. </li>
+                  <li><b>Microfoon:</b> neemt geluid op zodat je stem kan opnemen. </li>
+                </ul>
+                <p>Dat zijn er een paar, maar er zijn nog talloze andere invoerapparaten.</p> <br>
+                <h2>Verwerking</h2>
+                <p>Maar deze invoer moet natuurlijk ook worden verwerkt. </p>
+                <p>Dat gebeurt in de CPU (Engels: Central Processing Unit of Nederlands: Centrale verwerkingseenheid) van je computer. Dit apparaatje zit in je computer en voert de instructies uit die zijn gegeven met de invoer. </p>
+                <p>Maar hoe werkt deze CPU eigenlijk? De CPU heeft vier taken: </p>
+                <ul>
+                  <li><b>Fetch:</b> De CPU haalt de instructies uit het geheugen.</li>
+                  <li><b>Decode:</b> De CPU decodeert deze instructies zodat het duidelijk kan zien wat de CPU moet doen.</li>
+                  <li><b>Execute:</b> Het voert de instructies uit.</li>
+                  <li><b>Writeback:</b> De resultaten die zijn verwerkt worden teruggeschreven naar het geheugen. </li>
+                </ul> 
+                <br>
+                <h2>Uitvoer</h2>
+                <p>De uitvoer is het proces waarbij de uitkomsten van de verwerking worden laten zien aan de gebruiker. </p>
+                <p>Dit gaat via apparaten, ik zou enkele voorbeelden noemen:</p>
+                <ul>
+                  <li><b>Monitor:</b> hier word visueel de output laten zien. Zoals afbeeldingen of een video. </li>
+                  <li><b>Printer:</b> laat uitkomsten op fysiek papier zien.</li>
+                  <li><b>Luidsprekers:</b> speelt geluid af.</li>
+                </ul>
+                <br>
+                <h2>Opslag</h2>
+                <p>Natuurlijk moeten sommige gegevens ook nog worden bewaard. Dit gaat via de opslag in het systeem.</p>
+                <p>Er zijn twee soorten opslag:</p>
+                <ul>
+                  <li><b>Primaire opslag (RAM):</b> Tijdelijke opslag die snel kan worden benaderd door de CPU. </li>
+                  <li><b>Secundaire opslag:</b> Permanente opslag, maar wel minder snel als de primaire opslag.</li>
+                </ul>
+                <p>Er bestaan verschillende secundaire opslag:</p>
+                <ul>
+                  <li><b>Harde schijf (HDD):</b> Traditionele opslag die werkt op draaiende schijven.</li>
+                  <li><b>Solid State Drive (SSD):</b> Snellere opslag die niet werkt op draaiende schijven en dus sneller is.</li>
+                </ul>
+                <img src="https://o.quizlet.com/K6IczSPdBBqO0jvoQhYjqw.png" class="werkingcomputerfoto"> <!-- Foto -->
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/CBf-jIn44X0" title="CS Basics: Input Process Output" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="werkingcomputervideo" allowfullscreen></iframe> <!-- Filmpje -->
               </div>
-          </div>>
+          </div>
         </section>
       </div>
     </div>

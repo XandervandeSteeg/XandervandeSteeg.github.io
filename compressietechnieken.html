@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!--   dit is de homepage van mijn site -->
+<html> <!-- dit is het html element -->
   <head>
-    <title>Compressietechnieken</title>
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Compressietechnieken</title> <!-- Dit is de titel van mijn site -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- De externe css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- voor de emoticons die ik gebruik -->
   </head>
   <body>
-    <div class="main-container">
-      <div class="navbar">
+    <div class="main-container"> <!-- Dit maakt de indeling van de navbar, en de tekst en de media makkelijker -->
+      <div class="navbar"> <!-- Zodat ik op elke pagina de navigatie tegelijk aan kan passen -->
         <div class="logo">
-          <a href="index.html"><span>X</span>ander</a>
+          <a href="index.html"><span>X</span>ander</a> <!-- Een logo want dat staat leuk ;) En de span is zodat ik de X mooi kan stylen zonder dat de rest van de letter ook meegaan -->
         </div>
-        <ul class="navul">
+        <ul class="navul"> <!-- Dit is de navigatiebalk -->
           <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
           <li><a href="binairstelsel.html"><i class="fa-solid fa-list-ol"></i>Binair stelsel</a></li>
           <li><a href="kleurmodellen.html"><i class="fa-solid fa-palette"></i>Kleurmodellen</a></li>
@@ -20,13 +19,30 @@
           <li><a href="werkingcomputer.html"><i class="fa-solid fa-display"></i>Werking van een computer</a></li>
         </ul>
       </div>
-      <div class="main-content">
+      <div class="main-content"> <!-- Dit is zodat ik de style van mijn tekst over alle onderwerpen tegelijk aan kan passen -->
         <section class="compressietechnieken-section">
           <div class="container">
-              <div class="row">
-                
+              <div class="row"> <!-- Zodat ik overal dezelfde font en margin kan stylen -->
+                <h3>Compressietechnieken</h3> <!-- Ik gebruik h3 het grootste kopje -->
+                <br>
+                <h2>Beeldopslag: Bitmap- en vectorafbeeldingen</h2> <!-- Ik gebruik h2 voor de kleinere kopjes -->
+                <p><b>Bitmapafbeeldingen</b></p>
+                <p>Bitmapafbeeldingen bestaan uit een raster van <a href="kleurmodellen.html">pixels</a>. Elke pixel heeft een kleur en positie in de afbeelding. De kwaliteit van deze afbeelding hangt vooral af van de <a href="kleurmodellen.html">resolutie</a>. Bitmap wordt vooral gebruikt voor Fotografie en webafbeeldingen, maar ook gedetailleerde kunst.</p> <!-- De anchor tags tussendoor zijn linkjes naar de pagina waar dit uitgelegd wordt -->
+                <p><b>Vectorafbeeldingen</b></p>
+                <p>Dit type afbeelding bestaat uit vormen zoals lijnen en cirkels. Ze worden vorm gegeven door wiskundige vergelijkingen. Het hangt niet af van de resolutie en er is dus geen sprake van slechte kwaliteit. Vector wordt vooral gebruikt voor Logo’s, Illustraties en technische tekeningen.</p>
+                <br>
+                <h2>Geluidopslag: Sampling en Sample Rate</h2>
+                <p><b>Sampling</b></p>
+                <p>Sampling is het proces van het omzetten van geluidsgolven naar gegevens door de amplitude van het geluid op verschillende tijden te meten. Deze metingen worden samples genoemd.</p>
+                <p><b>Sample Rate</b></p>
+                <p>De Sample Rate is het aantal samples dat per seconde wordt genomen. Dit wordt gemeten in Hertz (Hz). Een hogere sample rate kan meer details van het geluid vastleggen, wat zorgt voor betere geluidskwaliteit.</p>
+                <br>
+                <h2>Tekstcompressie</h2>
+                <p>Tekstcompressie zorgt ervoor dat als je tekstgegevens opslaat, dat er minder opslagruimte nodig is omdat dit op te slaan. Dit wordt vooral bereikt door patronen in de tekst te zien en te coderen met minderen bits.</p>
+                <img src="https://crjdesign.co.uk/wp-content/uploads/2018/11/vectorvsbitmap.jpg" class="compressietechniekenfoto"> <!-- Plaatje -->
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/p2thSkOa_Xg" title="Vector vs Raster Graphics | Buddy Media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="compressietechniekenvideo" allowfullscreen></iframe> <!-- Filmpje -->
               </div>
-          </div>>
+          </div>
         </section>
       </div>
     </div>

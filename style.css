@@ -1,8 +1,8 @@
-/* font */
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap'); /* Clicker font */
 
-/* Variabelen voor de kleuren */
+/* Variabelen voor de kleuren, zodat ik niet alle kleurcodes constant moet kopiëren of onthouden */
 :root {
     --bg-zwart-900: #f2f2fc;
     --bg-zwart-100: #fdf9ff; 
@@ -12,12 +12,14 @@
     --hoofdkleur: #0099ff;
 }
 
+/* Hier zet ik de font naar Arial en zet ik de grootte van de letters naar 20 pixels. */
 body {
     line-height: 1.5;
     font-family: Arial;
     font-size: 20px;
 }
 
+/* Standaard style verwijderen */
 * {
     margin: 0;
     padding: 0;
@@ -26,71 +28,79 @@ body {
     box-sizing: border-box;
 }
 
+/* Zorgt ervoor dat de box size consistent is en niet constant anders */
 ::before,::after {
     box-sizing: border-box;
 }
 
+/* Styling voor de verschillende secties van de pagina's */
 .section {
-    background: var(--bg-zwart-900);
-    min-height: 100vh;
-    display: block;
-    margin-left: 310px;
-    z-index: 0;
-    opacity: 1;
+    background: var(--bg-zwart-900); /* Achtergrond kleur */
+    min-height: 100vh; /* Zorgt ervoor dat alles goed in positie is */
+    display: block; /* Zorgt ervoor dat alles goed in positie is */
+    margin-left: 310px; /* Zorgt ervoor dat de tekst niet achter de navigatiebalk hangt */
+    z-index: 0; /* Zorgt ervoor dat alles goed in positie is */
+    opacity: 1; /* Zorgt ervoor dat alles goed in positie is */
 }
 
 .container {
-    max-width: 1100px;
-    left: 350px;
-    position: fixed;
+    left: 350px; /* Linker positie */
+    position: fixed; 
+    max-width: 1100px; /* Dit zorgt ervoor dat de tekst niet de hele webpagina inneemt maar dat er ook nog ruimte is voor de foto's, filmpjes & games */
 }
 
+/* Zorgt ervoor dat alles goed in positie is */
 .row {
     flex-wrap: wrap;
     position: relative;
 }
 
+/* Styling van de navigatiebalk */
 .navbar {
-    width: 330px;
-    background: var(--bg-zwart-100);
-    left: 0;
-    top: 0;
-    padding: 30px;
-    height: 100%;
+    width: 330px; /* Breedte */
+    background: var(--bg-zwart-100); /* Achtergrondkleur */
+    left: 0;  /* Navigatiebar goed in positie */
+    top: 0; /* Navigatiebar goed in positie */
+    padding: 30px; /* Navigatiebar goed in positie */
+    height: 100%;  /* Volledig in de hoogte */
     border-right: 1px solid var(--bg-zwart-50);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    position: fixed;
+    display: flex; /* Navigatiebar goed in positie */
+    justify-content: center; /* Alles in het midden */
+    align-items: center;  /* Alles in het midden */
+    z-index: 10; /* Navigatiebar goed in positie */
+    position: fixed; /* Navigatiebar goed in positie */
 }
 
 .navbar ul {
-    list-style: none;
+    list-style: none; /* Dit zorgt ervoor dat er geen puntjes voor de verschillende onderdelen van de navigatiebalk komt */
 }
 
+/* Styling van de logo */
 .navbar .logo {
-    position: absolute;
-    top: 50px;
-    font-size: 30px;
-    text-transform: capitalize;
+    position: absolute; /* Logo goed in positie */
+    top: 50px; /* Logo goed in positie */
+    font-size: 30px; /* Letters moeten 30 pixels groot zijn */
+    text-transform: capitalize; /* Alles in hoofdletters */
 }
 
+/* Logo styling */
 .navbar .logo a {
-    color: var(--tekst-zwart-900);
-    font-weight: 700;
-    padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
-    position: relative;
+    color: var(--tekst-zwart-900); /* Tekst kleur */
+    font-weight: 700; /* Zorgt ervoor dat de tekst wat dikker is */
+    padding: 15px 20px; /* Logo goed in positie */
+    font-size: 30px; /* Letters 30 pixels maken */
+    letter-spacing: 5px; /* Ruimte tussen de letter */
+    position: relative; /* Logo goed in positie */
 }
 
+/* De X in het logo stylen */
 .navbar .logo a span {
-    font-family: 'Clicker Script', cursive;
-    font-size: 40px;
-    color: var(--hoofdkleur);
+    font-family: 'Clicker Script', cursive; /* Lettertype Clicker Script met cursieve stijl */
+    font-size: 40px; /* Letters worden 40 pixels */
+    color: var(--hoofdkleur); /* Kleur van de X */
 }
 
+/* Zorgt ook weer voor de positie van het logo */
 .navbar .logo a::before {
     content: '';
     position: absolute;
@@ -100,6 +110,7 @@ body {
     left: 0;
 }
 
+/* Zorgt ook weer voor de positie van het logo */
 .navbar .logo a::after {
     content: '';
     position: absolute;
@@ -109,63 +120,173 @@ body {
     right: 0;
 }
 
+/* Zorgt voor de positie van de navigatiebalk */
 .navbar .navul {
     margin-top: 50px;
 }
 
+/* Zorgt voor de positie van de navigatiebalk */
 .navbar .navul li {
     margin-bottom: 20px;
     display: block;
 }
 
+/* Styling van de links in de navigatiebalk */
 .navbar .navul li a {
-    font-size: 16px;
-    font-weight: 600;
-    display: block;
-    border-bottom: 1px solid var(--bg-zwart-50);
-    color: var(--tekst-zwart-900);
-    padding: 5px 15px;
+    font-size: 16px; /* Lettertype moet 16 pixels groot zijn */
+    font-weight: 600; /* Lettertype moet dikker zijn */
+    display: block; /* Voor de positie van de links */
+    border-bottom: 1px solid var(--bg-zwart-50); /* Zorgt voor de streep onder de verschillende onderdelen */
+    color: var(--tekst-zwart-900); /* Kleur van de links */
+    padding: 5px 15px; /* Voor de positie van de links */
 }
 
 .navbar .navul li a.active {
-    color: var(--hoofdkleur);
+    color: var(--hoofdkleur); /* De huidige pagina moet blauw worden gekleurd in de navigatiebalk */
 }
 
+/* Zorgt voor de positie van de emoticons naast de links */
 .navbar .navul li a i {
-    margin-right: 15px;
+    margin-right: 15px; 
 }
 
+/* Home section styling */
 .home {
-    min-height: 100vh;
-    display: flex;
-    color: var(--bg-zwart-900);
+    min-height: 100vh; /* Volledige view port hoogte */
+    display: flex; /* Zorgt voor de goede positie */
+    color: var(--bg-zwart-900); /* Achtergrond moet zwart zijn */
 }
 
+/* Styling van de hallo in de homepagina */
 h3.hallo {
-    font-family: serif;
-    font-size: 40px;
-    margin: 15px 0;
+    font-family: serif; /* Serif lettertype */
+    font-size: 40px; /* 40 pixels groot lettertype */
+    margin: 15px 0; /* Positie van de Hallo */
 }
 
+/* Styling van mijn naam */
 h3.hallo span {
-    font-family: 'Clicker Script', cursive;
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--hoofdkleur);
+    font-family: 'Clicker Script', cursive; /* Lettertype: Clicker Script, cursief */ 
+    font-size: 40px; /* Lettertype moet 40 pixels groot zijn */
+    font-weight: 700; /* Lettertype moet dik zijn */
+    color: var(--hoofdkleur); /* Kleur van de tekst moet blauw zijn */
 }
 
-.row ul {
-    margin-left: 20px;
-    list-style: none;
+/* Voor de links op de homepagina */
+.home-section ul {
+    margin-left: 20px; /* Lijst moet iets naar voren */
+    list-style: none; /* Bullets worden later vervangen door pijltjes */
 }
 
 .row ul a {
-    color: var(--hoofdkleur);
-    margin-left: 10px;
+    color: var(--hoofdkleur); /* Kleur van de tekst moet blauw zijn */
+    margin-left: 10px; /* Positie van de links */
 }
 
-.row ul li::before {
-    content: '⮕';
-    position: absolute;
-    left: 0;
+.home-section ul li::before {
+    content: '⮕'; /* Bullets worden vervangen door pijltjes */
+    position: absolute; /* Positie veranderen */
+    left: 0; /* Positie veranderen */
+}
+
+/* Positie veranderen van de opsommingen */
+.werkingcomputer-section ul {
+    margin-left: 20px;
+}
+
+/* Positie veranderen van de opsommingen */
+.binair-section ul {
+    margin-left: 20px;
+}
+
+/* Positie veranderen van de opsommingen */
+.kleurmodellen-section ul {
+    margin-left: 20px;
+}
+
+/* Positie veranderen van de opsommingen */
+.compressietechnieken-section ul {
+    margin-left: 20px;
+}
+
+/* Kopje van de sectie veranderen */
+.werkingcomputer-section h3 {
+    font-size: 40px; /* Lettertype 40 pixels groot */
+    color: var(--hoofdkleur); /* Lettertype blauw maken */
+}
+
+/* Kopje van de sectie veranderen */
+.binair-section h3 {
+    font-size: 40px; /* Lettertype 40 pixels groot */
+    color: var(--hoofdkleur); /* Lettertype blauw maken */
+}
+
+/* Kopje van de sectie veranderen */
+.compressietechnieken-section h3 {
+    font-size: 40px; /* Lettertype 40 pixels groot */
+    color: var(--hoofdkleur); /* Lettertype blauw maken */
+}
+
+/* Kopje van de sectie veranderen */
+.kleurmodellen-section h3 {
+    font-size: 40px; /* Lettertype 40 pixels groot */
+    color: var(--hoofdkleur); /* Lettertype blauw maken */
+}
+
+/* Vanaf hieronder pas ik alle margins aan zodat de plaatjes, filmpjes en de game rechts komen staan. */
+img {
+    margin-left: 1200px;
+    margin-top: -800px;
+    width: 700px;
+    height: 400px;
+    margin-bottom: 300px;
+}
+
+.binarygame {
+    margin-left: 1200px;
+    margin-top: -300px;
+    margin-bottom: 400px;
+}
+
+.binaryvideo {
+    margin-top: -800px;
+    margin-bottom: 100px;
+}
+
+.kleurmodellenfoto {
+    margin-left: 1200px;
+    margin-top: -1200px;
+    margin-bottom: 800px;
+}
+
+.kleurmodellenvideo {
+    margin-left: 1200px;
+    margin-top: -800px;
+    margin-bottom: 100px;
+}
+
+.compressietechniekenfoto {
+    margin-left: 1200px;
+}
+
+.compressietechniekenvideo {
+    margin-left: 1200px;
+    margin-top: -100px;
+}
+
+.werkingcomputerfoto {
+    margin-left: 1200px;
+    margin-top: -1200px;
+    margin-bottom: 800px;
+}
+
+.werkingcomputervideo {
+    margin-left: 1200px;
+    margin-top: -1200px;
+    margin-bottom: 200px;
+}
+
+.homevideo {
+    margin-left: 1200px;
+    margin-top: -1200px;
 }

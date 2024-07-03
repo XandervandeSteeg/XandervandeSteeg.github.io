@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!--   dit is de homepage van mijn site -->
+<html> <!-- dit is het html element -->
   <head>
-    <title>Binair stelsel</title>
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Binair stelsel</title> <!-- Dit is de titel van mijn site -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- De externe css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- voor de emoticons die ik gebruik -->
   </head>
   <body>
-    <div class="main-container">
-      <div class="navbar">
+    <div class="main-container"> <!-- Dit maakt de indeling van de navbar, en de tekst en de media makkelijker -->
+      <div class="navbar"> <!-- Zodat ik op elke pagina de navigatie tegelijk aan kan passen -->
         <div class="logo">
-          <a href="index.html"><span>X</span>ander</a>
+          <a href="index.html"><span>X</span>ander</a> <!-- Een logo want dat staat leuk ;) En de span is zodat ik de X mooi kan stylen zonder dat de rest van de letter ook meegaan -->
         </div>
-        <ul class="navul">
+        <ul class="navul"> <!-- Dit is de navigatiebalk -->
           <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
           <li><a href="binairstelsel.html" class="active"><i class="fa-solid fa-list-ol"></i>Binair stelsel</a></li>
           <li><a href="kleurmodellen.html"><i class="fa-solid fa-palette"></i>Kleurmodellen</a></li>
@@ -20,13 +19,38 @@
           <li><a href="werkingcomputer.html"><i class="fa-solid fa-display"></i>Werking van een computer</a></li>
         </ul>
       </div>
-      <div class="main-content">
+      <div class="main-content"> <!-- Dit is zodat ik de style van mijn tekst over alle onderwerpen tegelijk aan kan passen -->
         <section class="binair-section">
           <div class="container">
-              <div class="row">
-                <iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no"></iframe>
+              <div class="row"> <!-- Zodat ik overal dezelfde font en margin kan stylen -->
+                <h3>Het binair stelsel</h3> <!-- Ik gebruik h3 het grootste kopje -->
+                <br> <!-- Een break zodat er een enter staat tussen de h3 en de volgende tekst -->
+                <p>Het binair stelsel is een systeem dat alleen de getallen 0 en 1 gebruikt. Het is de basis van de moderne computers, omdat alle computer werken met 0 (aan) en 1 (uit). Hieronder leg ik uit hoe het binair stelsel werkt en hoe je dit stelsel gebruikt.</p>
+                <br>
+                <p>Door deze 0 en 1 op een bepaalde manier bij elkaar te zetten maken ze getallen. Dit is hoe je de getallen 1 t/m 10 in binaire getallen zet:</p>
+                <ul>
+                  <li>1 = 00001</li>
+                  <li>2 = 00010</li>
+                  <li>3 = 00011</li>
+                  <li>4 = 00100</li>
+                  <li>5 = 00101</li> <!-- Lijst van getallen 1 t/m 10 in binair -->
+                  <li>6 = 00110</li>
+                  <li>7 = 00111</li>
+                  <li>8 = 01000</li>
+                  <li>9 = 01001</li>
+                  <li>10 = 01010</li>
+                </ul>
+                <br>
+                <p>Je kan het binaire stelsel eigenlijk in kleine groepjes verdelen.</p>
+                <p>Dat zie je in het plaatje hiernaast.</p>
+                <p>Om bijvoorbeeld het getal 20 te maken. Zoek je eerst het grootste getal in de rij onder de 20. Dat is hier 16. 20 – 16 = 4. Dus we moeten ook nog een 1 bij de 4 zetten. Als je bijvoorbeeld een 1 bij de 8 zet en een 1 bij de 2. Dan krijg je 8 + 2 = 10.</p>
+                <img src="https://farm6.staticflickr.com/5820/22025160156_24894b1acf_b.jpg"> <!-- Plaatje -->
+                <br>
+                <p>Wil je met het binair stelsel oefenen? Speel dan het spelletje Binary Bonanza hiernaast!
+                <iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no" class="binarygame"></iframe> <!-- Het spelletje Binary Bonanza -->
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/TeQH_Bei8iU" title="Binaire getallen omrekenen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="binaryvideo" allowfullscreen></iframe> <!-- Filmpje -->
               </div>
-          </div>>
+          </div>
         </section>
       </div>
     </div>

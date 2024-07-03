@@ -1,34 +1,76 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Kleurmodellen</title>
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html"><span>X</span>ander</a>
-        </div>
-        <ul class="navul">
-          <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-          <li><a href="binairstelsel.html"><i class="fa-solid fa-list-ol"></i>Binair stelsel</a></li>
-          <li><a href="kleurmodellen.html" class="active"><i class="fa-solid fa-palette"></i>Kleurmodellen</a></li>
-          <li><a href="compressietechnieken.html"><i class="fa-solid fa-file-zipper"></i>Compressietechnieken</a></li>
-          <li><a href="werkingcomputer.html"><i class="fa-solid fa-display"></i>Werking van een computer</a></li>
-        </ul>
+<!DOCTYPE html> <!--   dit is de homepage van mijn site -->
+<html> <!-- dit is het html element -->
+<head>
+  <title>Kleurmodellen</title> <!-- Dit is de titel van mijn site -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- De externe css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- voor de emoticons die ik gebruik -->
+</head>
+<body>
+  <div class="main-container"> <!-- Dit maakt de indeling van de navbar, en de tekst en de media makkelijker -->
+    <div class="navbar"> <!-- Zodat ik op elke pagina de navigatie tegelijk aan kan passen -->
+      <div class="logo">
+        <a href="index.html"><span>X</span>ander</a> <!-- Een logo want dat staat leuk ;) En de span is zodat ik de X mooi kan stylen zonder dat de rest van de letter ook meegaan -->
       </div>
-      <div class="main-content">
-        <section class="kleurmodellen-section">
-          <div class="container">
-              <div class="row">
-
-              </div>
-          </div>>
-        </section>
-      </div>
+      <ul class="navul"> <!-- Dit is de navigatiebalk -->
+        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="binairstelsel.html"><i class="fa-solid fa-list-ol"></i>Binair stelsel</a></li>
+        <li><a href="kleurmodellen.html" class="active"><i class="fa-solid fa-palette"></i>Kleurmodellen</a></li>
+        <li><a href="compressietechnieken.html"><i class="fa-solid fa-file-zipper"></i>Compressietechnieken</a></li>
+        <li><a href="werkingcomputer.html"><i class="fa-solid fa-display"></i>Werking van een computer</a></li>
+      </ul>
     </div>
-  </body>
+    <div class="main-content"> <!-- Dit is zodat ik de style van mijn tekst over alle onderwerpen tegelijk aan kan passen -->
+      <section class="kleurmodellen-section">
+        <div class="container">
+          <div class="row"> <!-- Zodat ik overal dezelfde font en margin kan stylen -->
+            <h3>Kleurmodellen</h3> <!-- Ik gebruik h3 het grootste kopje -->
+            <p>Computers en Printers gebruiken veel verschillende kleurmodellen om kleuren weer te geven. De twee die het vaakst voorkomen zijn:</p>
+            <ul>
+              <li><b>RGB (Rood, Groen en Blauw):</b> deze wordt het vaakst gebruikt voor weergave van een scherm.</li>
+              <li><b>CMY-K (Cyaan, Magenta, Geel, Zwart):</b> deze wordt vooral gebruikt voor het printen.</li>
+            </ul>
+            <p>Ook zijn pixels en resolutie erg belangrijk.</p>
+            <br>
+            <h2>RGB Kleurmodel</h2> <!-- Ik gebruik h2 voor de kleinere kopjes -->
+            <p>Op een scherm gebruikt elke pixels drie subpixels. Dat zijn rood, groen en blauw. Door de ene kleur feller te maken dan de ander kunnen alle mogelijke kleurencombinaties worden weergegeven. Deze felheid wordt meestal gemeten op een schaal van 0 tot 255. Een aantal voorbeelden:</p>
+            <ul>
+              <li><b>Zwart:</b> (0, 0, 0)</li>
+              <li><b>Wit:</b> (255, 255, 255)</li>
+              <li><b>Rood:</b> (255, 0, 0)</li>
+              <li><b>Groen:</b> (0, 255, 0)</li>
+              <li><b>Blauw:</b> (0, 0, 255)</li>
+              <li><b>Geel:</b> (255, 255, 0)</li>
+            </ul>
+            <br>
+            <h2>CMY-K Kleurmodel</h2>
+            <p>CMY-K werkt met subtractieve kleurmenging. Dit betekent dat kleuren worden gemaakt met licht van een wit oppervlak af te trekken met inkt. Zwart (K) wordt toegevoegd om verschillende kleuren te maken. Een aantal voorbeelden:</p>
+            <ul>
+              <li><b>Wit:</b> (0, 0, 0, 0)</li>
+              <li><b>Zwart:</b> (0, 0, 0, 100)</li>
+              <li><b>Rood:</b> (0, 100, 100, 0)</li>
+              <li><b>Groen:</b> (100, 0, 100, 0)</li>
+              <li><b>Blauw:</b> (100, 100, 0, 0)</li>
+              <li><b>Geel:</b> (0, 0, 100, 0)</li>
+            </ul>
+            <br>
+            <h2>Pixels</h2>
+            <p>Pixels zijn de kleinste eenheid van een digitaal beeld. Een scherm is opgebouwd uit duizenden tot zelfs wel miljoenen pixels. Al deze pixels kunnen elke een kleur weergeven.</p>
+            <p>De kwaliteit van het beeld word bepaald door het aantal pixels (de resolutie).</p>
+            <br>
+            <h2>Resolutie</h2>
+            <p>Resolutie is het aantal pixels in een scherm of een afbeelding. Het wordt vaak weergegeven door breedte x hoogte. Een aantal voorbeelden:</p>
+            <ul>
+              <li><b>HD:</b> 1280 x 720 pixels</li>
+              <li><b>Full HD:</b> 1920 x 1080 pixels</li>
+              <li><b>4K Ultra HD:</b> 3840 x 2160 pixels</li>
+              <li><b>8K Ultra HD:</b> 7680 x 4320 pixels</li>
+            </ul>
+            <img src="https://schot.nl/images/cmyk-rgb.png" class="kleurmodellenfoto" alt="RGB en CMY-K kleurmodellen"> <!-- Plaatje -->
+            <iframe width="700" height="500" src="https://www.youtube.com/embed/9hirYMZ7PQc" title="What is the difference between RGB and CMYK?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="kleurmodellenvideo"></iframe> <!-- Filmpje -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
 </html>
